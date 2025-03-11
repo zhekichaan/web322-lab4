@@ -40,7 +40,11 @@
       <% projects.forEach(project=>{ %>
       <tr>
         <td><%= project.title %></td>
-        <td><%= project.sector %></td>
+        <td>
+          <a class="btn btn-primary btn-sm" href="?sector=<%= project.sector %>"
+            ><%= project.sector %></a
+          >
+        </td>
         <td><%= project.summary_short %></td>
         <td>
           <a class="btn btn-sm" href="projects/<%= project.id %>">Details</a><%=
